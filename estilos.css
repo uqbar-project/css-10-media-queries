@@ -1,0 +1,108 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: B612, serif;
+  margin: 0;
+  width: 100%;
+}
+
+/* ====================================================================== */
+/*                      DEFINICIONES GENERALES                            */
+/* ====================================================================== */
+
+html, body, .main, .content {
+  height: 100%;
+}
+
+.sidebar, .content {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 500px) {
+  html, body, .main, .content {
+    height: auto;
+  }
+}
+
+/* ====================================================================== */
+/*                                    MAIN                                */
+/* ====================================================================== */
+
+/* El contenido general tiene un layout horizontal */
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Para dispositivos chicos, sin embargo, tendremos un menú vertical
+   y queremos que el menú de opciones vaya al fondo */
+@media (max-width: 500px) {
+  .main {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+
+
+/* ====================================================================== */
+/*                                   SIDEBAR                              */
+/* ====================================================================== */
+
+.sidebar {
+  background-color: beige;
+}
+
+.sidebar--titulo {
+  font-size: 1.5em;
+}
+
+.sidebar__menu--option {
+  color: #900;
+  text-decoration: none;
+  padding: 3px 0; 
+  display: block;
+}
+
+@media all and (min-width: 1001px) {
+  .sidebar__menu--option:after {
+    content: attr(data-description);
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #666;
+    margin-left: 0.5rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .sidebar {
+    width: calc(100% - 2em);
+    padding: 1em;
+  }
+
+  .sidebar__menu--option {
+    padding-left: 21px;
+    background: url(../images/email.png) left center no-repeat;
+  }
+}
+
+/* ====================================================================== */
+/*                                   CONTENT                              */
+/* ====================================================================== */
+
+.content {
+  width: 80%;
+}
+
+.content--titulo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.content__article {
+  font-size: 1.1em;
+  padding: 1em;
+  color: #353535;
+}
