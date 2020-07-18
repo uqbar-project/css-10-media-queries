@@ -66,6 +66,10 @@ html, body, .main, .content {
   display: block;
 }
 
+.sidebar__menu--option:hover {
+  color: rgb(221, 44, 53);
+}
+
 @media all and (min-width: 1001px) {
   .sidebar__menu--option:after {
     content: attr(data-description);
@@ -84,7 +88,6 @@ html, body, .main, .content {
 
   .sidebar__menu--option {
     padding-left: 21px;
-    background: url(../images/email.png) left center no-repeat;
   }
 }
 
