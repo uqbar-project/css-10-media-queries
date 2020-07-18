@@ -133,7 +133,7 @@ Además vamos a pedirle al sidebar que ocupe un 100% del ancho, pero para que no
 
 Claro, si recordamos [cómo es el modelo de la caja](https://github.com/uqbar-project/css-02-box-model), si el ancho del sidebar es 100% y le agregamos un padding a izquierda y derecha de 1em eso nos da = 100% + 2em, entonces nos van a aparecer molestas barras de desplazamiento horizontales:
 
-![barras de desplazamiento horizontales en mobile](./images/mobile-with-scrollbars.png)
+![barras de desplazamiento horizontales en mobile](./images/mobile-with-ugly-scrollbars.png)
 
 Una solución es cambiar el box-sizing:
 
