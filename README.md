@@ -73,7 +73,7 @@ Al agregar un atributo con el prefijo `data-` nos aseguramos que el navegador lo
     content: attr(data-description);
     font-size: 0.8rem;
     font-style: italic;
-    color: #666;
+    color: var(--color-font-secundario);
     margin-left: 0.5rem;
   }
 }
@@ -89,7 +89,8 @@ Las pseudoclasses permiten trabajar los diferentes estados de un elemento HTML. 
 
 ```css
 .sidebar__menu--option:hover {
-  color: rgb(221, 44, 53);
+  color: var(--color-link-hover);  
+  /* la variable color-link-hover está definida en :root */
 }
 ```
 
