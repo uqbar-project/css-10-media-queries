@@ -40,13 +40,13 @@ Vemos una demo:
 
 En el css tenemos las siguientes definiciones:
 
-- un contenedor principal que define ancho y alto al 100%, y un display: flex, con orientación horizontal
+- un contenedor principal que define ancho y alto al 100%, y un display: flex, con orientación horizontal (el default)
 - el container toma el 80%
 
 ```css
 .main {
   display: flex;
-  flex-direction: row;
+  /* por defecto toma flex-direction: row; */
 }
 
 .content {

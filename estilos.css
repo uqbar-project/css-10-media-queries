@@ -34,7 +34,7 @@ html, body, .main, .content {
 /* El contenido general tiene un layout horizontal */
 .main {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 
 /* Para dispositivos chicos, sin embargo, tendremos un menú vertical
