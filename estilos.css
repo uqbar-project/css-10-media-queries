@@ -12,6 +12,10 @@ body {
 /*                      DEFINICIONES GENERALES                            */
 /* ====================================================================== */
 
+.root {
+  --color-font-secundario: #666;
+}
+
 html, body, .main, .content {
   height: 100%;
 }
@@ -75,7 +79,7 @@ html, body, .main, .content {
     content: attr(data-description);
     font-size: 0.8rem;
     font-style: italic;
-    color: #666;
+    color: var(--color-font-secundario);
     margin-left: 0.5rem;
   }
 }
