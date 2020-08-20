@@ -12,8 +12,11 @@ body {
 /*                      DEFINICIONES GENERALES                            */
 /* ====================================================================== */
 
-.root {
+:root {
   --color-font-secundario: #666;
+  --color-link: #900;
+  --color-link-hover: rgb(221, 44, 53);
+  --background-sidebar: beige;
 }
 
 html, body, .main, .content {
@@ -56,7 +59,7 @@ html, body, .main, .content {
 /* ====================================================================== */
 
 .sidebar {
-  background-color: beige;
+  background-color: var(--background-sidebar);
 }
 
 .sidebar--titulo {
@@ -64,14 +67,14 @@ html, body, .main, .content {
 }
 
 .sidebar__menu--option {
-  color: #900;
+  color: var(--color-link);
   text-decoration: none;
   padding: 3px 0; 
   display: block;
 }
 
 .sidebar__menu--option:hover {
-  color: rgb(221, 44, 53);
+  color: var(--color-link-hover);
 }
 
 @media all and (min-width: 1001px) {
