@@ -28,12 +28,6 @@ html, body, .main, .content {
   font-size: 1rem;
 }
 
-@media (max-width: 500px) {
-  html, body, .main, .content {
-    height: auto;
-  }
-}
-
 /* ====================================================================== */
 /*                                    MAIN                                */
 /* ====================================================================== */
@@ -46,7 +40,11 @@ html, body, .main, .content {
 
 /* Para dispositivos chicos, sin embargo, tendremos un menú vertical
    y queremos que el menú de opciones vaya al fondo */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  html, body, .main, .content {
+    height: auto;
+  }
+
   .main {
     flex-direction: column-reverse;
     width: 100%;
