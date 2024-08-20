@@ -76,7 +76,7 @@ html, body, .main, .content {
 }
 
 @media all and (min-width: 1001px) {
-  .sidebar__menu--option:after {
+  .sidebar__menu--option::after {
     content: attr(data-description);
     font-size: 0.8rem;
     font-style: italic;
